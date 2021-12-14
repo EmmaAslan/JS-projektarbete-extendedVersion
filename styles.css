@@ -1,0 +1,83 @@
+body {
+    font-family: "Poppins";
+    background-color: #ECE6F0;
+}
+
+h1 {
+    font-family: "Comic Neue";
+}
+
+#filter {
+    font-size: 110%;
+}
+
+#sortButtons {
+    margin-top: 0.5rem;
+}
+
+/* Layout för alla knappar på sidan */
+button {
+    background:linear-gradient(to bottom, #ffffff 5%, #f5ebff 100%);
+	background-color:#ffffff;
+	border-radius:15px;
+	border:2px solid #8a6a8a;
+	display:inline-block;
+	cursor:pointer;
+	color:#6b426b;
+	font-size:12px;
+	padding:7px 14px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}
+
+button:hover {
+	background:linear-gradient(to bottom, #f5ebff 5%, #ffffff 100%);
+	background-color:#f5ebff;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* Layout för ofiltrerade listan */
+#studentList > div {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 8px;
+}
+
+#studentList {
+	margin-top: 15px;
+}
+#studentList p {
+	padding: 10px;
+	border: 2px solid #d8cddf;
+	margin: 0;
+}
+
+/* Layout för filtrerad lista */
+#filterStudentList button {
+    margin-left: 0.5rem;
+}
+
+#filterStudentList p {
+	padding: 0rem 1rem;
+	display: inline-grid;
+	grid-template-columns: 300px;
+	grid-gap: 8px;
+}
+
+#filterStudentList div p {
+	font-size: 90%;
+	font-weight: bold;
+	margin: 5px;
+}
+
+/* Layout för listan som syns när man använder sökfältet */
+#searchedList p {
+	padding: 1rem;
+	display: inline-grid;
+	grid-template-columns: auto;
+	grid-gap: 8px;
+}

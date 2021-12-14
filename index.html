@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skolansökningar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comic Neue">
+    <script
+      src="https://kit.fontawesome.com/bc09532312.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Individuellt projektarbete - Skolansökningar</h1>
+    
+    <input type="text" placeholder="Sök.." name="search" id="searchBar">
+    <button type="submit" id="searchButton">Sök!</button>
+
+    <div id="filter">
+        Filtrera ut elever per utbildning:
+        <div>
+          <input type="radio" id="choice1" name="student" value="Frontend" />
+          <label for="choice1">Frontend</label>
+        </div>
+        <div>
+          <input type="radio" id="choice2" name="student" value="Backend" />
+          <label for="choice2">Backend</label>
+        </div>
+        <div>
+          <input type="radio" id="choice3" name="student" value=".NET" />
+          <label for="choice3">.NET</label>
+        </div>
+    </div>
+
+      <button id="filterEducation">Filtrera</button>
+
+      <!-- Box med sorteringsknappar som bara visas efter man har filtrerat eleverna-->
+      <div id="sortButtons">
+          Sortera listan:
+          <div>
+            <button id="sortAge">Ålder <i class="fas fa-caret-up"></i></button>
+            <button id="sortFirstName">Förnamn <i class="fas fa-caret-up"></i></button>
+            <button id="sortLastName">Efternamn <i class="fas fa-caret-up"></i></button>
+          </div>
+        
+      </div>
+
+    <!-- Box för lista med alla elever -->
+    <div id="studentList"></div>
+
+    <!-- Box för lista med filtrerade elever -->
+    <div id="filterStudentList"></div>
+
+    <!-- Box för sökresultat -->
+    <div id="searchedList"></div>
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
